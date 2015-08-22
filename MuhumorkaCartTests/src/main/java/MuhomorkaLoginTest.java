@@ -7,7 +7,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import static org.junit.Assert.*;
 
 /**
- * Created by 945GCM on 11.8.2015 ã..
+ * Created by 945GCM on 11.8.2015 Äƒ..
  */
 public class MuhomorkaLoginTest {
     private WebDriver selenium;
@@ -60,7 +60,7 @@ public class MuhomorkaLoginTest {
         loginButton.click();
 
         WebElement purchaseFinalButton = selenium.findElement(By.xpath("/html/body/div[2]/div/div/div/div/article/div/div/form/div[2]/div/div[1]/input[3]"));
-        //purchaseFinalButton.click();
+        purchaseFinalButton.click();
 
     }
 
@@ -68,6 +68,6 @@ public class MuhomorkaLoginTest {
 
     @After
     public void tearDown() {
-        //selenium.quit();
+        selenium.quit();
     }
 }
